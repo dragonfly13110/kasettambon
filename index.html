@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>คลังความรู้เกษตรตำบล</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Sarabun', 'sans-serif'],
+          },
+          colors: {
+            'brand-green': {
+              light: '#E6F4EA', // emerald-50 equivalent
+              DEFAULT: '#10B981', // emerald-500
+              dark: '#059669',  // emerald-600
+              darker: '#047857' // emerald-700
+            },
+            'brand-brown': {
+              light: '#F5F5F4', // stone-100
+              DEFAULT: '#A8A29E', // stone-400
+              dark: '#78716C',   // stone-500
+              darker: '#57534E'  // stone-600
+            },
+            'brand-text': '#374151' // gray-700
+          }
+        }
+      }
+    }
+  </script>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0"
+  }
+}
+</script>
+</head>
+<body class="bg-brand-brown-light">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
+<link rel="stylesheet" href="index.css">
+<script src="index.tsx" type="module"></script>
