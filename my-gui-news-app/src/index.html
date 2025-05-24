@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>เพิ่มข่าวสาร</h1>
+        <form id="newsForm">
+            <label for="title">หัวข้อข่าว:</label>
+            <input type="text" id="title" required>
+
+            <label for="summary">สรุปข่าว:</label>
+            <textarea id="summary" required></textarea>
+
+            <label for="date">วันที่:</label>
+            <input type="date" id="date" required>
+
+            <label for="imageUrls">ลิงก์ภาพ (คั่นด้วยเครื่องหมายจุลภาค):</label>
+            <input type="text" id="imageUrls">
+
+            <button type="submit">เพิ่มข่าว</button>
+        </form>
+    </div>
+    <script src="renderer.js"></script>
+</body>
+</html>
